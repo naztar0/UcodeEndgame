@@ -2,16 +2,16 @@ NAME = 	endgame
 
 SRCS = 	src/*.c	
 INC = 	inc/*.h
-SDL =   -F inc/framework -I inc/framework/SDL2.framework/SDL2
+SDL =   -F resource/framework -I resource/framework/SDL2.framework/SDL2
 
-CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic\
+CFLAGS = -std=c11 -Wall -Wextra -Wpedantic\
 		 -framework SDL2_ttf \
-	 	 -rpath inc/framework -framework SDL2 \
+	 	 -rpath resource/framework -framework SDL2 \
 	 	 					  -framework SDL2_image \
 	 	 					  -framework SDL2_mixer \
-		-I inc/framework/SDL2_image.framework/Headers \
-		-I inc/framework/SDL2_ttf.framework/Headers \
-		-I inc/framework/SDL2_mixer.framework/Headers
+		-I resource/framework/SDL2_image.framework/Headers \
+		-I resource/framework/SDL2_ttf.framework/Headers \
+		-I resource/framework/SDL2_mixer.framework/Headers
 
 all: $(NAME)
 
