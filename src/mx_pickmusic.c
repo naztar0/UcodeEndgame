@@ -2,7 +2,6 @@
 
 const char *mx_pickmusic()
 {
-    srand(time(NULL));   // Initialization, should only be called once.
     int choice = rand() % 5;
     const char *name = NULL;
     switch(choice){
